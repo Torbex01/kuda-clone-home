@@ -45,8 +45,8 @@ const Wrapper = styled.div`
     /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 70px;
+    justify-content: space-between;
+    /* gap: 70px; */
 
     @media (max-width: 900px) {
    justify-content: center;
@@ -97,7 +97,7 @@ a{
 `
 
 const ImageSide = styled.div`
-max-width: 800px;
+max-width: 500px;
 /* background-color: darkorchid; */
 display: flex;
 align-items: center;

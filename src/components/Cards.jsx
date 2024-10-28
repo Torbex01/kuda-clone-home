@@ -21,7 +21,7 @@ const Container = styled.div`
     height: 100px;
     color: #40196D;
     /* background-color: brown; */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 10px;
     border-radius: 5px;
 `
