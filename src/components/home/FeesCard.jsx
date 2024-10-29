@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import image from '../../assets/YourMoneyImage.png'
+import image from '../../assets/FeesCardImage.png'
+import { MdKeyboardArrowRight } from "react-icons/md"
 
-const YourMoney = ()=>{
+const FeesCard = ()=>{
     return(
         <Container>
             <Wrapper>
@@ -9,15 +10,18 @@ const YourMoney = ()=>{
                     <img src={image} alt="" />
                 </ImageBox>
                 <TextBox>
-                    <h1>It’s your money, we just help you manage it.</h1>
-                    <p>Save it, spend it, send it. It’s up to you. Whatever you choose to do with your money, we'll make sure it's done better and free of charge. We take responsibility for that.</p>
+                    <h1>Fees as clear as glass.</h1>
+                    <p>We’re serious about free banking, and we will never, ever charge you for anything without your consent.</p>
+                    <a href="">See all our fees
+                        <span><MdKeyboardArrowRight size={25} /> </span>
+                    </a>
                 </TextBox>
             </Wrapper>
         </Container>
     )
 
 }
-export default YourMoney
+export default FeesCard
 
 const Container = styled.div`
  /* background-color: blue; */
@@ -47,7 +51,6 @@ const Wrapper = styled.div`
     flex-direction: center;
     justify-content: center;
     gap: 80px;
-    padding: 0;
 
    
 `
@@ -60,9 +63,9 @@ align-items: center;
 justify-content: center;
 
 img{
-    object-fit: contain;
     width: 100%;
     height: 90%;
+    object-fit: contain;
 }
 `
 const TextBox = styled.div`
@@ -93,5 +96,11 @@ p{
     max-width: 390px;
     font-size: 14px;
     font-weight: 500;
+    text-align: left;
+}
+
+a{
+    font-weight: 600;
+    display: flex;
 }
 `

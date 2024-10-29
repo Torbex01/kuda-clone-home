@@ -45,8 +45,8 @@ const Wrapper = styled.div`
     /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* gap: 70px; */
+    justify-content: center;
+    gap: 70px;
 
     @media (max-width: 900px) {
    justify-content: center;
@@ -87,6 +87,7 @@ p{
 a{
     /* background-color: green; */
     font-weight: 600;
+    display: flex;
    
 
     span{

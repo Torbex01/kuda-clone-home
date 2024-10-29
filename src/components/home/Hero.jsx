@@ -50,8 +50,8 @@ const Hero = ()=>{
     /* background-color: saddlebrown; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 60px;
     @media (max-width: 900px) {
    justify-content: center;
    align-items: center;
@@ -99,6 +99,7 @@ const Hero = ()=>{
     border: none;
     outline: none;
     border-radius: 8px;
+    cursor: pointer;
    }
 
     h3{

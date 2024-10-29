@@ -1,23 +1,29 @@
 import styled from "styled-components"
-import image from '../../assets/YourMoneyImage.png'
+import image from '../../assets/HelpCardImage.png'
+import { MdKeyboardArrowRight } from "react-icons/md"
 
-const YourMoney = ()=>{
+const HelpCard = ()=>{
     return(
         <Container>
             <Wrapper>
+                
+                <TextBox>
+                    <h1>We’re always happy to help you.</h1>
+                    <p>You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there’ll always be a friendly person there to make your life easy.</p>
+                    <a href="">Get Help
+                        <span><MdKeyboardArrowRight size={25} /> </span>
+                    </a>
+                </TextBox>
+
                 <ImageBox>
                     <img src={image} alt="" />
                 </ImageBox>
-                <TextBox>
-                    <h1>It’s your money, we just help you manage it.</h1>
-                    <p>Save it, spend it, send it. It’s up to you. Whatever you choose to do with your money, we'll make sure it's done better and free of charge. We take responsibility for that.</p>
-                </TextBox>
             </Wrapper>
         </Container>
     )
 
 }
-export default YourMoney
+export default HelpCard
 
 const Container = styled.div`
  /* background-color: blue; */
@@ -31,38 +37,26 @@ const Container = styled.div`
     margin-bottom: 50px;
 `
 const Wrapper = styled.div`
-
-@media (max-width: 1100px){
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
- width: 95%;
+ width: 90%;
     /* background-color: saddlebrown; */
     /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
-    flex-direction: center;
     justify-content: center;
     gap: 80px;
-    padding: 0;
-
-   
 `
 const ImageBox = styled.div`
-max-width: 650px;
-max-height: 540px;
+max-width: 600px;
+/* max-height: 530px; */
 /* background-color: darkorchid; */
 display: flex;
 align-items: center;
 justify-content: center;
 
 img{
-    object-fit: contain;
     width: 100%;
-    height: 90%;
+    height: 97%;
+    object-fit: contain;
 }
 `
 const TextBox = styled.div`
@@ -82,16 +76,21 @@ h1{
     @media (max-width: 900px){
         font-size: 28px;
     }
-    font-size: 33px;
+    font-size: 32px;
     color: #40196D;
     font-weight: 800;
     line-height: 1.3;
-    /* max-width: 250px; */
+    max-width: 450px;
   }
 
 p{
     max-width: 390px;
     font-size: 14px;
     font-weight: 500;
+}
+
+a{
+    font-weight: 600;
+    display: flex;
 }
 `

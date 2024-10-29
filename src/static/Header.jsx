@@ -74,6 +74,7 @@ const Header = ()=>{
       color: #40196D;
       font-weight: 520;
       font-size: 13px;
+      cursor: pointer;
     }
 
     @media (max-width: 990px) {
@@ -83,6 +84,10 @@ const Header = ()=>{
   const RightHead = styled.div`
   display: flex;
   align-items: center;
+
+  button{
+    cursor: pointer;
+  }
   `
 
   const SignIn = styled.button`

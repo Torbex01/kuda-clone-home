@@ -37,13 +37,13 @@ const Container = styled.div`
     margin-bottom: 50px;
 `
 const Wrapper = styled.div`
- width: 95%;
+ width: 90%;
     /* background-color: saddlebrown; */
     /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* gap: 80px; */
+    justify-content: center;
+    gap: 80px;
 `
 const ImageBox = styled.div`
 max-width: 600px;
@@ -56,6 +56,7 @@ justify-content: center;
 img{
     width: 100%;
     height: 97%;
+    object-fit: contain;
 }
 `
 const TextBox = styled.div`
@@ -90,5 +91,6 @@ p{
 
 a{
     font-weight: 600;
+    display: flex;
 }
 `
