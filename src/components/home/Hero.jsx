@@ -104,7 +104,7 @@ const Hero = ()=>{
 
     h3{
       width: 90%;
-      font-size: 15px;
+      font-size: 12px;
       /* background-color: blue; */
       height: 35px;
       margin: 0;
@@ -118,7 +118,7 @@ const Hero = ()=>{
     }
 
     span{
-      font-size: 10px;
+      font-size: 8px;
       font-weight: 300;
     }
     
