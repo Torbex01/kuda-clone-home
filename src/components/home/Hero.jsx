@@ -1,7 +1,7 @@
 
 import { FaApple } from "react-icons/fa";
 import playstore from '../../assets/playstoreLogo.png'
-import heroImage from '../../assets/KudaHero.png'
+import heroImage from '../../assets/kudaHero.png'
 import styled from "styled-components"
 const Hero = ()=>{
     return(
